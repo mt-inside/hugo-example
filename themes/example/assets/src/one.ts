@@ -1,6 +1,7 @@
+/* resolved realtive to /assets
+ * for resolution relative to this file, use ./ */
 import update from 'src/updater'
 
 setTimeout (function() {
-    const e = document.getElementById("one")
-    update(e, "live update one")
+    update("one", "live update one")
 }, 1000);

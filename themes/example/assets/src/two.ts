@@ -1,6 +1,7 @@
-import update from 'src/updater'
+/* resolved realtive to this file
+ * for absolute resolution (realtive to /assets), drop the ./ */
+import update from './updater'
 
 setTimeout (function() {
-    const e = document.getElementById("two")
-    update(e, "live update two")
+    update("two", "live update two")
 }, 3000);
