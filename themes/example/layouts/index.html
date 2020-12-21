@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+
+<!-- The homepage
+Uniquely, does not use <theme>/layouts/_default/baseof.html
+-->
+
+<html lang="en">
+    <head>
+        {{- partial "head.html" . -}}
+    </head>
+    <body>
+        {{ partial "header.html" . }}
+	<!-- from: content/_index.md -->
+        {{ .Content }}
+    </body>
+</html>
