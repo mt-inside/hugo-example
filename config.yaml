@@ -5,6 +5,8 @@ theme: example
 
 menu:
   header:
+    - name: Home
+      url: "/"
     - name: Type1
       url: "/type1"
     - name: Type2

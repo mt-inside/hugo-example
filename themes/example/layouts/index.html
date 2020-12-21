@@ -12,5 +12,13 @@ Uniquely, does not use <theme>/layouts/_default/baseof.html
         {{ partial "header.html" . }}
 	<!-- from: content/_index.md -->
         {{ .Content }}
+
+        <p>Thanks to our sponsors:
+        <ul>
+        {{ range .Site.Data.sponsors }}
+            <li>{{ .name }} for {{ .value }}</li>
+        {{ end }}
+        </ul>
+        </p>
     </body>
 </html>

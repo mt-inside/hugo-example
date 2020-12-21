@@ -3,4 +3,10 @@
 {{ range .Site.Menus.header }}
 <a href="{{ .URL }}">{{ .Name }}</a>
 {{ end }}
+|
+find us on:
+{{- range $k, $v := .Site.Data.contact -}}
+<a href="#{{ $v }}">{{ $k }}</a>
+&nbsp;
+{{- end -}}
 </p>
